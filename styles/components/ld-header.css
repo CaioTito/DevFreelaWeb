@@ -1,0 +1,25 @@
+.ld-header{
+    height: var(--ld-header-size);
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.ld-header >.wrapper{
+    max-width: var(--ld-main-wrapper);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.ld-header >.wrapper >.image-wrapper{
+    height: var(--ld-header-size);
+    padding: 16px 0;
+}
+
+.ld-header >.wrapper >.image-wrapper >.image{
+    height: 100%;
+}

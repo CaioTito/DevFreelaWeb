@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LD</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap" rel="stylesheet">
+
+    <!-- SETTINGS -->
+    <link rel="stylesheet" href="styles/settings/wrapper.css">
+    <link rel="stylesheet" href="styles/settings/core.css">
+    <link rel="stylesheet" href="styles/settings/color.css">
+    <link rel="stylesheet" href="styles/settings/text.css">
+
+    <!-- GENERICS -->
+    <link rel="stylesheet" href="styles/generic/box-sizing.css">
+    <link rel="stylesheet" href="styles/generic/reset.css">
+
+    <!-- BASE -->
+    <link rel="stylesheet" href="styles/base/html.css">
+
+    <!-- OBJECTS -->
+    <link rel="stylesheet" href="styles/objects/ld-wrapper.css">
+
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="styles/components/ld-button.css">
+    <link rel="stylesheet" href="styles/components/ld-input.css">
+    <link rel="stylesheet" href="styles/components/ld-radio.css">
+    <link rel="stylesheet" href="styles/components/ld-header.css">
+
+    <!-- PAGES -->
+    <link rel="stylesheet" href="styles/pages/login.css">
+
+    <!-- TRUMPS -->
+    <link rel="stylesheet" href="styles/trumps/visibilidade.css">
+</head>
+
+<body>
+    <div class = "ld-login">
+        <div class = "ld-wrapper">
+            <header class = "ld-header">
+                <div class = "wrapper">
+                    <div class = image-wrapper>
+                        <img alt="logo devfreela" class="image" src = "assets/logo/devfreela.svg">
+                    </div>                    
+                </div>                
+            </header>
+
+            <main class = "main-content">
+                <div class = "left">
+                    <span class="steps">PASSO 1 DE 2</span>
+                    <h1 class="main-title">
+                        <span class="up">Olá!</span>
+                        <span class="down">Vamos criar seu cadastro.</span>
+                    </h1>
+
+                    <div class="radio-buttons">
+                        <h3 class="title">Qual o seu perfil?</h3>
+                        <div class="buttons">
+                            <label class="ld-radio">
+                                Dev
+                                <input name="cargo" type="radio">
+                                <span class = "checkmark"></span>
+                            </label>
+                            <label class="ld-radio">
+                                Cliente
+                                <input name="cargo" type="radio">
+                                <span class = "checkmark"></span>
+                            </label>
+                        </div>                        
+                    </div>                    
+
+                    <input class="ld-input" placeholder="Nome completo"></input>
+                    <input type="date" class="ld-input" placeholder="Data de nascimento"></input>
+                    <input type="email" class="ld-input" placeholder="Email"></input>
+                    <input type="password" class="ld-input" placeholder="Senha"></input>
+
+                    <button class="ld-button">Continuar</button>
+                </div>
+                <div class = "right">
+                    <img class="image" alt="fundo de decoração com 3 cubos fundo gradiente nas cores do arco-iris" src = "assets/image/bg-cubes.png">
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

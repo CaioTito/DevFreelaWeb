@@ -1,0 +1,42 @@
+.ld-login >.ld-wrapper >.main-content >.left {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.ld-login >.ld-wrapper >.main-content >.left >.radio-buttons{
+    margin-bottom: 42px;
+}
+
+.ld-login >.ld-wrapper >.main-content >.left >.radio-buttons >.title{
+    font-size: calc(var(--ld-font-size-base) + 8px);
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.ld-login >.ld-wrapper >.main-content >.left >.radio-buttons >.buttons >.ld-radio{
+    margin-right: 70px;
+}
+
+.ld-login >.ld-wrapper >.main-content >.left >.main-title{
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.ld-login >.ld-wrapper >.main-content >.left >.main-title >.up{
+    font-size: calc(var(--ld-font-size-base) + 38px);
+    display: block;
+    margin-bottom: 7px;
+}
+
+.ld-login >.ld-wrapper >.main-content >.left >.main-title >.down{
+    font-size: calc(var(--ld-font-size-base) + 22px);
+}
+
+.ld-login >.ld-wrapper >.main-content >.left >.steps{
+    display: block;
+    font-weight: 800;
+    font-size: calc(var(--ld-font-size-base) + 4px);
+    font-family: Helvetica;
+    color: var(--ld-color-grey);
+    margin-bottom: 13px;
+}
