@@ -9,17 +9,64 @@
     top: 0;
 }
 
+/* Logo */
+
 .ld-header >.wrapper{
     max-width: var(--ld-main-wrapper);
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
-.ld-header >.wrapper >.image-wrapper{
+
+.ld-header >.wrapper.-has-user{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.ld-header >.wrapper >.logo-wrapper{
     height: var(--ld-header-size);
     padding: 16px 0;
 }
 
-.ld-header >.wrapper >.image-wrapper >.image{
+.ld-header >.wrapper >.logo-wrapper >.image{
     height: 100%;
+}
+
+/* Usuario */
+
+.ld-header >.wrapper >.user{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.ld-header >.wrapper >.user >.info{
+    text-align: right;
+}
+
+.ld-header >.wrapper >.user>.info >.name{
+    font-weight: 800;
+    font-size: calc(var(--ld-font-size-base) + 4px);
+    display: block;
+    margin-bottom: 3px;
+}
+
+.ld-header >.wrapper >.user>.info >.role{
+    font-weight: 400;
+    font-size: calc(var(--ld-font-size-base) + 2px);
+    display: block;
+}
+
+.ld-header >.wrapper >.user >.photo-wrapper{
+    margin-left: 12px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--ld-color-primary);
+    overflow: hidden;
+}
+
+.ld-header >.wrapper >.user >.photo-wrapper >img{
+    height: 100%;
+    width: 100%;
 }
