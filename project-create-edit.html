@@ -34,14 +34,17 @@
     <link rel="stylesheet" href="styles/components/ld-header.css">
 
     <!-- PAGES -->
-    <link rel="stylesheet" href="styles/pages/create.css">
+    <link rel="stylesheet" href="styles/pages/project-create-edit.css">
 
     <!-- TRUMPS -->
     <link rel="stylesheet" href="styles/trumps/visibilidade.css">
+
+    <!-- SCRIPTS -->
+    <script src="scripts/project-create-edit.js"></script>
 </head>
 
 <body>
-    <div class = "ld-create">
+    <div class = "ld-project-create-edit">
         <div class = "ld-wrapper">
             <header class = "ld-header">
                 <div class = "wrapper">
@@ -57,13 +60,13 @@
                 </a>
                 
                 <div class = "left">
-                    <h1 class="main-title">Vamos cadastrar seu novo projeto!</h1>                   
+                    <h1 class="main-title" id="main-title"></h1>                   
 
                     <input class="ld-input" placeholder="Titulo"></input>
                     <input type="number" class="ld-input" placeholder="Custo total"></input>
                     <textarea class="ld-input" placeholder="Descrição"></textarea>
 
-                    <button class="ld-button">Continuar</button>
+                    <button class="ld-button" id="action-button"></button>
                 </div>
                 <div class = "right">
                     <img class="image" alt="fundo de decoração com 3 cubos fundo gradiente nas cores do arco-iris" src = "assets/image/bg-float-cubes.png">
