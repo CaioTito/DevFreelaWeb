@@ -1,6 +1,6 @@
 window.onload = function(){
     //Type: 'create' ou 'edit'
-    const screenType = 'edit';
+    const screenType = 'create';
 
     //MODO EDITAR
     if(screenType == 'create'){
