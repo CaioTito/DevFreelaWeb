@@ -13,7 +13,11 @@ function checkIfAnyRoleIsChecked(){
 
 function cadastrar (){
     if(checkIfAnyRoleIsChecked() === false){
-        alert("Marque algum perfil!")
+        Swal.fire(
+            'Algo deu errado!',
+            'Marque algum perfil!',
+            'error'
+          )
         return;
     }
 
@@ -34,14 +38,25 @@ function cadastrar (){
     })
     .then(response => response.json())
     .then(response => {
-        localStorage.setItem("userName", response.fullName);
-        localStorage.setItem("role", response.role === "dev" ? "Desenvolvedor" : "Cliente");
+        Swal.fire({
+            title: 'Sucesso!',
+            text: 'Cadastrado com sucesso!',
+            icon: 'success',
+            confirmButtonText: 'Ok!'
+        }).then((result) => {
+            if(result.isConfirmed){
+                localStorage.setItem("userName", response.fullName);
+                localStorage.setItem("role", response.role === "dev" ? "Desenvolvedor" : "Cliente");
+                localStorage.setItem("idClient", response.id);
 
-        alert('Cadastrado com sucesso!');
-
-        window.location.href = "list.html";
+                window.location.href = "list.html";
+            }
+        })        
     })
     .catch(error => {
-        alert('Erro ao cadastrar!');
+        Swal.fire(
+            'Algo deu errado!',
+            'Erro ao cadastrar!',
+            'error')
     })
 }

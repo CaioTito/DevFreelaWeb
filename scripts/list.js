@@ -15,7 +15,10 @@ function getProjects(){
         buildTable();
     })
     .catch(error => {
-        alert('Erro ao carregar lista!');
+        Swal.fire(
+            'Algo deu errado!',
+            'Erro ao carregar lista!',
+            'error')
     })
 }
 
@@ -37,6 +40,9 @@ function deleteProject(id){
 
 function buildTable(){
     document.querySelector("#table-body").innerHTML = '';
+    const idClient = localStorage.getItem('idClient');
+
+    list = list.filter (el => el.idClient === idClient);
 
     list.forEach(el => {
         let template = `
