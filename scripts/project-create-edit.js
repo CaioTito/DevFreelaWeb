@@ -5,6 +5,19 @@ const screenType = params.id ? 'edit' : 'create';
 
 window.onload = function(){
     setScreencTypeTexts();
+    fillInputs();
+}
+
+function fillInputs(){
+    if(screenType === 'edit'){
+        fetch(`https://64ad3f79b470006a5ec59b1b.mockapi.io/api/projects/${params.id}`)
+        .then(response => response.json())
+        .then(project => {
+            document.querySelector('#title').value = project.title;
+            document.querySelector('#totalCost').value = project.totalCost
+            document.querySelector('#description').value = project.description
+        })
+    }
 }
 
 function setScreencTypeTexts(){
@@ -39,6 +52,7 @@ function createOrEdit(){
     .then(response => response.json())
     .then(response => {
         screenType === 'edit' ? alert('Editado com sucesso!') : alert('Cadastrado com sucesso!');
+        window.location.href = "list.html"
     })
     .catch(error => {
         screenType === 'edit' ? alert('Erro ao editar!') : alert('Erro ao cadastrar!');

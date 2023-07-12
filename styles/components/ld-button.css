@@ -9,6 +9,7 @@
     width: 100%;
     cursor: pointer;
     transition: background-color 0.5s;
+    text-decoration: none;
 }
 
 .ld-button.-small{
