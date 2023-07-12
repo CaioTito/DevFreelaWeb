@@ -59,15 +59,15 @@
                     keyboard_arrow_left
                 </a>
                 
-                <div class = "left">
+                <form class = "left" onsubmit="createOrEdit()" action="javascript:void(0)">
                     <h1 class="main-title" id="main-title"></h1>                   
 
-                    <input class="ld-input" placeholder="Titulo"></input>
-                    <input type="number" class="ld-input" placeholder="Custo total"></input>
-                    <textarea class="ld-input" placeholder="Descrição"></textarea>
+                    <input required id="title" class="ld-input" placeholder="Titulo"></input>
+                    <input required id="totalCost" type="number" class="ld-input" placeholder="Custo total"></input>
+                    <textarea required id="description" class="ld-input" placeholder="Descrição"></textarea>
 
-                    <button class="ld-button" id="action-button"></button>
-                </div>
+                    <button type = "submit" class="ld-button" id="action-button"></button>
+                </form>
                 <div class = "right">
                     <img class="image" alt="fundo de decoração com 3 cubos fundo gradiente nas cores do arco-iris" src = "assets/image/bg-float-cubes.png">
                 </div>
